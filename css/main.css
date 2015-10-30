@@ -7,8 +7,10 @@ figure {
 }
 
 .content article{
-    padding: 100px 0;
     margin: 0 auto;
+
+    padding: 100px 0;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -16,50 +18,136 @@ img{
     max-width: 100%;
 }
 
+//.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.navbar{
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+.navbar .navigation {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+
+}
+
+.navbar .navigation li {
+
+    flex:1;
+
+}
+
+.navbar .navigation .logo-text{
+    flex: 3;
+}
+
+.navbar .navigation li a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    line-height: 1.4
+
+
+}
 
 .bird-box{
     position: relative;
+    overflow: hidden;
     height: 600px;
     background: url('/images/bird-bg.jpg');
-    background-size: auto 600px;
-    background-position: top center;
     background-attachment: fixed;
-    overflow: hidden;
+    background-position: top center;
+    background-size: auto 600px;
 }
 
 .logo{
-    height: 100px;
-    width: 100%;
-
-    background-image: url(/images/black-bird-logo.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     position: absolute;
     top: 50%;
     margin-top: -50px
+
+    width: 100%;
+
+    height: 100px;
+    background-image: url(/images/black-bird-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 .fore-bird{
-    background-color: rgba(pink, 0.3);
-    width: 960px;
-    height: 733px;
-    background-image: url(/images/fore-bird.png);
-    background-repeat: no-repeat;
-    background-position: right;
     position: absolute;
+    top: 380px;
     left: 50%;
     margin-left: -480px;
-    top: 380px;
+    width: 960px;
+    height: 733px;
+
+    background-color: rgba(pink, 0.3);
+    background-image: url(/images/fore-bird.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .back-bird{
-    width: 960px;
-    height: 298px;
-    background: url(/images/back-bird.png);
-    background-repeat: no-repeat;
     position:absolute;
     left: 50%;
     margin-left: -480px;
 
+    width: 960px;
+    height: 298px;
+    background: url(/images/back-bird.png);
+    background-repeat: no-repeat;
+}
+
+.large-window{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    margin-top: 100px;
+    width: 100%;
+    height:550px;
+    background-image: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&fm=jpg&s=9c69296a682f2821ffedf583276c065d');
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: auto 960px;
+    background-repeat: no-repeat;
+
+    //border-radius: 80%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.word-wrapper{
+    height: 12%;
+}
+
+.word-wrapper h1{
+    color: white;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    font-weight:500;
 }
